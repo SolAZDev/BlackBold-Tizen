@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/BlackBoldTizen" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="VFzkPbHVuo.BlackBoldTizen" package="VFzkPbHVuo" required_version="2.3.1" ambient_support="enable"/>
+    <author href="https://SolAZDev.com/" email="SolAZDev@gmail.com">SolAZDev</author>
+    <tizen:category name="http://tizen.org/category/wearable_clock"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="tizen.org/feature/humanactivitymonitor"/>
+    <feature name="tizen.org/feature/location.gps"/>
+    <feature name="tizen.org/feature/network.internet"/>
+    <feature name="tizen.org/feature/sensor.heart_rate_monitor"/>
+    <feature name="tizen.org/feature/sensor.pedometer"/>
+    <icon src="icon.png"/>
+    <name>BlackBoldTizen</name>
+    <name xml:lang="en-us">English (US)</name>
+    <tizen:privilege name="http://tizen.org/privilege/account.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/calendar.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/healthinfo"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/alarm"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>
