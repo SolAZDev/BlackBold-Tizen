@@ -7,11 +7,13 @@ var svgIDs = {
     WeatherIcon: null,
     Temp: null
 
-}
+};
 
 function GetAllIDs() {
     const main = document.getElementById("main").contentDocument;
-    svgIDs.hrHand = main.getElementById('#HourPointer')
+    console.log(main);
+    svgIDs.hrHand = main.getElementById('#HourPointer');
+    console.log(svgIDs.hrHand);
     idsLoaded = true;
 }
 
@@ -49,7 +51,7 @@ function bindEvents() {
 
 
 function init() {
-//	GetAllIDs();
+	GetAllIDs();
     bindEvents();
 
     // Update the watch hands every second
