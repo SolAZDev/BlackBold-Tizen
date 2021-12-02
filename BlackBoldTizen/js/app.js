@@ -12,12 +12,12 @@ var svgIDs = {
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 function GetAllIDs() {
-    //    const main = document.getElementById("main").contentDocument;
-    //    console.log(main);
+    const main = document.getElementById("main").contentDocument;
+    console.log(main);
     svgIDs.hrHand = document.getElementById('HourPointer');
     svgIDs.mnHand = document.getElementById('MinutePointer');
     svgIDs.scHand = document.getElementById('SecondPointer');
-    svgIDs.timeText = document.getElementById("TimeText");
+    svgIDs.timeText = document.getElementById("HourText");
     svgIDs.dateText = document.getElementById("DateText");
     console.log(svgIDs.hrHand);
     idsLoaded = true;
@@ -38,7 +38,9 @@ function updateTime(firstTime = false) {
         hour = datetime.getHours(),
         minute = datetime.getMinutes(),
         second = datetime.getSeconds();
-
+    if (!idsLoaded) {
+        return;
+    }
     // Rotate the hour/minute/second hands
     rotateElement("HourPointer", (hour + (minute / 60) + (second / 3600)) * 30);
     rotateElement("MinutePointer", (minute + second / 60) * 6);
@@ -67,7 +69,7 @@ function bindEvents() {
 
 
 function init() {
-    GetAllIDs();
+    // GetAllIDs();
     bindEvents();
     updateTime(true);
 

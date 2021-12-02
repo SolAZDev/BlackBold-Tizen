@@ -13,8 +13,9 @@
 
 <body>
    <div id="container">
-      <!--  <object id="main" type="image/svg+xml" data="image/BlackBoldPure.svg"></object> -->
-      <svg width="360" height="360" viewBox="0 0 95.250002 95.250002" version="1.1" id="svg5"
+      <!-- <object id="main" type="image/svg+xml" data="image/BlackBoldPure.svg" onload="GetAllIDs()"></object> -->
+
+      <svg width="360" height="360" viewBox="0 0 95.250002 95.250002" version="1.1" id="Main"
          xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
          <defs id="defs2" />
          <g id="layer1" style="display:inline">
@@ -34,7 +35,7 @@
                style="display:inline;fill:#525252;fill-opacity:1;stroke-width:0.196229;stroke-opacity:0.7"
                d="m 47.625001,12.095241 c 0.249452,0 0.529166,6.450289 0.529166,7.116057 v 28.721873 c 0,0.665769 -0.236007,1.201749 -0.529166,1.201749 -0.29316,0 -0.529167,-0.53598 -0.529167,-1.201749 V 19.211298 c 0,-0.665768 0.279714,-7.116057 0.529167,-7.116057 z" />
             <path id="HourPointer" style="fill:#808080;fill-opacity:1;stroke-width:0.203122;stroke-opacity:0.7"
-               d="m 47.623321,22.17473 c 0.374178,0 0.793749,4.607596 0.793749,5.08317 v 20.516725 c 0,0.475574 -0.354011,0.858438 -0.793749,0.858438 -0.43974,0 -0.793751,-0.382864 -0.793751,-0.858438 V 27.2579 c 0,-0.475574 0.419571,-5.08317 0.793751,-5.08317 z" />
+               d="m 47.623321,22.17473 c 0.374178,0 0.793749,4.607596 0.793749,5.083171 v 20.516725 c 0,0.475574 -0.354011,0.858438 -0.793749,0.858438 -0.43974,0 -0.793751,-0.382864 -0.793751,-0.858438 V 27.257901 c 0,-0.475575 0.419571,-5.083171 0.793751,-5.083171 z" />
             <circle style="fill:#000000;fill-opacity:1;stroke-width:0.275448;stroke-opacity:0.7" id="path5830"
                cx="47.625004" cy="47.625" r="0.13229167" />
          </g>
@@ -42,9 +43,9 @@
             <g id="g50164">
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:6.61458px;line-height:1.05;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="57.559147" y="47.472889" id="HourText">
-                  <tspan id="TimeText" style="font-size:6.61458px;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="57.559147" y="47.472889">HH:MM</tspan>
+                  x="57.559181" y="47.472862" id="HourText">
+                  <tspan id="tspan9997" style="font-size:6.61458px;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
+                     x="57.559181" y="47.472862">HH:MM</tspan>
                </text>
                <text xml:space="preserve"
                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:ultra-condensed;font-size:5.02708px;line-height:1.05;font-family:'Fira Sans Compressed';-inkscape-font-specification:'Fira Sans Compressed, Ultra-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0"
@@ -70,82 +71,80 @@
                </text>
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:7.9375px;line-height:1.25;font-family:sans-serif;fill:#17b2ff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="21.617544" y="46.901531" id="text61576">
+                  x="21.617544" y="46.901531" id="Temp">
                   <tspan id="tspan61574" style="font-size:7.9375px;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
                      x="21.617544" y="46.901531">100</tspan>
                </text>
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:4.7625px;line-height:1.25;font-family:sans-serif;mix-blend-mode:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="12.961741" y="51.32917" id="text87898">
+                  x="12.961741" y="51.32917" id="CityName">
                   <tspan id="tspan87896" style="font-size:4.7625px;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
                      x="12.961741" y="51.32917">CityName</tspan>
                </text>
             </g>
-            <g id="g134542" transform="translate(0,5.046884)">
+            <g id="g1558">
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:5.29168px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
-                  x="64.900444" y="71.640808" id="text101424">
+                  x="64.900444" y="76.403297" id="text101424">
                   <tspan id="tspan101422"
                      style="font-size:5.29168px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264584"
-                     x="64.900444" y="71.640808">Heart</tspan>
+                     x="64.900444" y="76.403297">Heart</tspan>
                </text>
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:3.96875px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="65.010582" y="76.919991" id="HRCounter">
+                  x="65.010582" y="81.68248" id="HRCounter">
                   <tspan id="tspan121237"
                      style="font-size:3.96875px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="65.010582" y="76.919991">100</tspan>
+                     x="65.010582" y="81.68248">100</tspan>
                </text>
-            </g>
-            <g id="g158648" transform="translate(0,5.046884)">
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:5.29167px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="31.97286" y="71.640945" id="text98502">
+                  x="31.97286" y="76.403435" id="text98502">
                   <tspan id="tspan98500"
                      style="font-size:5.29167px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="31.97286" y="71.640945">Steps</tspan>
+                     x="31.97286" y="76.403435">Steps</tspan>
                </text>
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:3.96875px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="31.931843" y="76.147079" id="StepCounter">
+                  x="31.931843" y="80.909569" id="StepCounter">
                   <tspan id="tspan142600"
                      style="font-size:3.96875px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="31.931843" y="76.147079">100000</tspan>
+                     x="31.931843" y="80.909569">100000</tspan>
                </text>
             </g>
-            <g id="g160898" transform="translate(0,-51.838534)">
+            <g id="g2128">
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:5.29168px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
-                  x="64.900444" y="71.640808" id="text160892">
+                  x="66.900444" y="19.802275" id="text160892">
                   <tspan id="tspan160890"
                      style="font-size:5.29168px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264584"
-                     x="64.900444" y="71.640808">Watch</tspan>
+                     x="66.900444" y="19.802275">Watch</tspan>
                </text>
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:3.96875px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="65.010582" y="76.919991" id="WBat">
+                  x="67.010582" y="25.081457" id="WBat" width="100%">
                   <tspan id="tspan160894"
                      style="font-size:3.96875px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="65.010582" y="76.919991">100%</tspan>
+                     x="67.010582" y="25.081457">100%</tspan>
                </text>
             </g>
-            <g id="g160908" transform="translate(0,-51.838534)">
+            <g id="g2145">
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:5.29167px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="31.97286" y="71.640945" id="text160902">
+                  x="31.97286" y="19.802412" id="text160902">
                   <tspan id="tspan160900"
                      style="font-size:5.29167px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="31.97286" y="71.640945">Phone</tspan>
+                     x="31.97286" y="19.802412">Phone</tspan>
                </text>
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:3.96875px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="31.931843" y="76.147079" id="PBat">
+                  x="31.931843" y="24.308546" id="PBat">
                   <tspan id="tspan160904"
                      style="font-size:3.96875px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="31.931843" y="76.147079">100%</tspan>
+                     x="31.931843" y="24.308546">100%</tspan>
                </text>
             </g>
-            <g id="g198381" transform="translate(0,-0.67028543)">
+            <g id="g198381">
                <text xml:space="preserve"
                   style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
                   x="48.116699" y="58.645042" id="EventSummary">
@@ -170,7 +169,6 @@
             </g>
          </g>
       </svg>
-
    </div>
    <script src="js/app.js"></script>
 </body>
