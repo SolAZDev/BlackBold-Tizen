@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1.058333mm"
+   height="37.03968mm"
+   viewBox="0 0 1.0583331 37.039681"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <path
+       id="MinutePointer"
+       style="display:inline;fill:#525252;fill-opacity:1;stroke-width:0.196229;stroke-opacity:0.7"
+       d="M 0.529167,0 C 0.778619,0 1.058333,6.450289 1.058333,7.116057 V 35.83793 c 0,0.665769 -0.236007,1.201749 -0.529166,1.201749 C 0.236007,37.039679 0,36.503699 0,35.83793 V 7.116057 C 0,6.450289 0.279714,0 0.529167,0 Z" />
+  </g>
+</svg>

@@ -1,176 +1,21 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-   <meta name="description" content="Tizen Wearable Web Basic Watch Face" />
-
-   <title>Basic Watch</title>
-
-   <link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-
-<body>
-   <div id="container">
-      <!-- <object id="main" type="image/svg+xml" data="image/BlackBoldPure.svg" onload="GetAllIDs()"></object> -->
-
-      <svg width="360" height="360" viewBox="0 0 95.250002 95.250002" version="1.1" id="Main"
-         xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-         <defs id="defs2" />
-         <g id="layer1" style="display:inline">
-            <circle style="fill:#000000;fill-opacity:1;stroke-width:1.05457;stroke-opacity:0.7" id="path846" cx="47.625"
-               cy="47.625" r="47.625" />
-            <path id="use1676" style="fill:#ffffff;fill-opacity:1;stroke-width:0.177985;stroke-opacity:0.7"
-               d="m 179.5,0 v 8 h 1 V 0 Z m -17.81836,0.93359375 -0.99414,0.10546875 0.83594,7.9550781 0.99414,-0.1035156 z m 36.63672,0 -0.83594,7.95703125 0.99414,0.1035156 0.83594,-7.9550781 z m -55.25391,2.89648435 -0.97851,0.2070313 1.66406,7.8242186 0.97656,-0.207031 z m 73.8711,0 -1.66211,7.8242189 0.97656,0.208984 1.66406,-7.8261716 z m -92.08399,4.8242188 -0.95117,0.3105469 2.47266,7.6074222 0.94922,-0.308594 z m 110.29688,0.00195 -2.47266,7.6093751 0.95117,0.308594 2.47266,-7.6093753 z m -127.90625,6.7011721 -0.91407,0.408203 3.25391,7.306641 0.91406,-0.40625 z m 145.51562,0.002 -3.2539,7.308594 0.91406,0.40625 3.25391,-7.308594 z m -162.328122,8.505859 -0.865235,0.5 4,6.927735 0.865235,-0.5 z m 179.138672,0.002 -4,6.927734 0.86719,0.5 4,-6.927734 z m -194.968751,10.214843 -0.808593,0.587891 4.703125,6.472656 0.808593,-0.58789 z m 210.798831,0.0039 -4.70117,6.470703 0.80859,0.58789 4.70117,-6.470703 z m -225.474612,11.8125 -0.742187,0.669921 5.353515,5.945313 0.742188,-0.669922 z m 240.150392,0.0039 -5.35352,5.945312 0.74414,0.667969 5.35352,-5.945313 z m -253.509767,13.283203 -0.669922,0.742187 5.945313,5.353516 0.669922,-0.744141 z m 266.869137,0.002 -5.94531,5.353516 0.66992,0.742187 5.94532,-5.351562 z m -278.767574,14.607422 -0.587891,0.808594 6.472656,4.701172 0.587891,-0.808594 z m 290.666014,0.002 -6.47265,4.703125 0.58789,0.808594 6.47265,-4.701172 z m -300.970702,15.769531 -0.5,0.867188 6.927734,4 0.5,-0.867188 z m 311.275392,0.0039 -6.92774,4 0.5,0.867188 6.92774,-4 z m -319.876954,16.761713 -0.40625,0.91211 7.308593,3.25391 0.40625,-0.91211 z m 328.478514,0.004 -7.30859,3.2539 0.40625,0.91211 7.30859,-3.2539 z m -335.2792956,17.5664 -0.3085938,0.95118 7.6074214,2.47265 0.308594,-0.95117 z m 342.0800756,0.004 -7.60937,2.47266 0.30859,0.95117 7.60938,-2.47266 z m -347.00781,18.18164 -0.2070312,0.97852 7.8242192,1.66406 0.208984,-0.97852 z m 351.93359,0.004 -7.82422,1.66406 0.20704,0.97852 7.82617,-1.66407 z m -354.93359,18.59765 -0.10351562,0.99414 7.95507812,0.83594 0.1054687,-0.99414 z m 357.93359,0.004 -7.95703,0.83594 0.10547,0.99414 7.95508,-0.83594 z M -0.00585938,179.50195 v 1 H 7.9941406 v -1 z m 352.00780938,0.004 v 1 h 8 v -1 z M 8.8828125,197.48438 0.92773438,198.32031 1.03125,199.31445 8.9882812,198.47852 Z m 342.2285175,0.004 -0.10352,0.99414 7.95508,0.83594 0.10547,-0.99414 z m -339.462892,17.78711 -7.8261724,1.66211 0.2089844,0.97852 7.824219,-1.66407 z m 336.699222,0.004 -0.20899,0.97851 7.82617,1.66211 0.20704,-0.97851 z m -332.091801,17.40039 -7.6074215,2.4707 0.3085937,0.95117 7.6093748,-2.4707 z m 327.482421,0.004 -0.31055,0.95118 7.60938,2.4707 0.30859,-0.95117 z m -321.078124,16.82227 -7.308594,3.25391 0.40625,0.91406 7.308594,-3.25391 z m 314.673824,0.004 -0.40625,0.91406 7.3086,3.2539 0.40625,-0.91406 z m -306.546871,16.0625 -6.927734,4 0.5,0.86523 6.927734,-4 z m 298.419921,0.004 -0.5,0.86524 6.92774,4 0.5,-0.86524 z m -288.658202,15.12305 -6.472656,4.70312 0.58789,0.8086 6.472657,-4.70313 z m 278.896482,0.004 -0.58789,0.8086 6.47266,4.70312 0.58594,-0.80859 z m -267.607419,14.02149 -5.945313,5.35351 0.669922,0.74219 5.943359,-5.35351 z m 256.316409,0.004 -0.66797,0.74218 5.94531,5.35352 0.66797,-0.74414 z m -243.62305,12.76367 -5.353516,5.94531 0.744141,0.66992 5.353516,-5.94531 z m 230.92969,0.004 -0.74219,0.66797 5.35156,5.94532 0.74414,-0.66797 z m -216.970706,11.36719 -4.703125,6.47266 0.810547,0.58789 4.701172,-6.47266 z m 203.011716,0.002 -0.80859,0.58789 4.70117,6.47266 0.81055,-0.58789 z m -187.941403,9.84766 -4,6.92773 0.867187,0.5 4,-6.92773 z m 172.871093,0.002 -0.86719,0.5 4,6.92969 0.86719,-0.5 z m -156.85352,8.21875 -3.2539,7.3086 0.91406,0.40625 3.25391,-7.3086 z m 140.83399,0.002 -0.91211,0.40625 3.25391,7.30859 0.91211,-0.40625 z m -124.04492,6.5 -2.47071,7.60742 0.95118,0.30859 2.4707,-7.60742 z m 107.25586,0 -0.95117,0.31054 2.47265,7.60743 0.95117,-0.3086 z m -89.87891,4.70898 -1.66211,7.82617 0.97852,0.20703 1.66211,-7.82421 z m 72.50195,0.002 -0.97851,0.20704 1.66406,7.82617 0.97852,-0.20899 z m -54.72656,2.86719 -0.83594,7.95703 0.99414,0.10352 0.83594,-7.95508 z m 36.95313,0 -0.99414,0.10547 0.83593,7.95508 0.99414,-0.10352 z m -18.97657,0.99414 v 8 h 1 v -8 z"
-               transform="scale(0.26458334)" />
-            <path id="rect2471" style="fill:#ffffff;fill-opacity:1;stroke-width:0.157085;stroke-opacity:0.7"
-               d="m 178.5,0 v 10 h 3 V 0 Z m 90.20117,23.365234 -5,8.660157 2.59961,1.5 5,-8.660157 z m -177.402342,0.002 -2.597656,1.5 5,8.660156 2.597656,-1.5 z m 243.837892,65.333984 -8.66016,5 1.5,2.597656 8.66016,-5 z m -310.271486,0.002 -1.5,2.597656 8.660157,5 1.5,-2.597656 z M 350.00391,178.5 v 3 h 10 v -3 z M 0,178.50391 v 3 h 10 v -3 z m 327.97852,85.19921 -1.5,2.59766 8.66015,5 1.5,-2.59766 z m -295.951176,0.002 -8.660156,5 1.5,2.59765 8.660156,-5 z m 234.275386,62.77148 -2.59765,1.5 5,8.66016 2.59765,-1.5 z m -172.599605,0.002 -5,8.66015 2.597656,1.5 5,-8.66015 z m 84.800785,23.52539 v 10 h 3 v -10 z"
-               transform="scale(0.26458334)" />
-         </g>
-         <g id="layer3" style="display:inline">
-            <path id="SecondPointer" style="fill:#909090;fill-opacity:1;stroke-width:0.155163;stroke-opacity:0.7"
-               d="m 47.625002,2.817055 c 0.124726,0 0.264583,8.066043 0.264583,8.898581 v 35.916506 c 0,0.83254 -0.118004,1.502778 -0.264583,1.502778 -0.14658,0 -0.264584,-0.670238 -0.264584,-1.502778 V 11.715636 c 0,-0.832538 0.139857,-8.898581 0.264584,-8.898581 z" />
-            <path id="MinutePointer"
-               style="display:inline;fill:#525252;fill-opacity:1;stroke-width:0.196229;stroke-opacity:0.7"
-               d="m 47.625001,12.095241 c 0.249452,0 0.529166,6.450289 0.529166,7.116057 v 28.721873 c 0,0.665769 -0.236007,1.201749 -0.529166,1.201749 -0.29316,0 -0.529167,-0.53598 -0.529167,-1.201749 V 19.211298 c 0,-0.665768 0.279714,-7.116057 0.529167,-7.116057 z" />
-            <path id="HourPointer" style="fill:#808080;fill-opacity:1;stroke-width:0.203122;stroke-opacity:0.7"
-               d="m 47.623321,22.17473 c 0.374178,0 0.793749,4.607596 0.793749,5.083171 v 20.516725 c 0,0.475574 -0.354011,0.858438 -0.793749,0.858438 -0.43974,0 -0.793751,-0.382864 -0.793751,-0.858438 V 27.257901 c 0,-0.475575 0.419571,-5.083171 0.793751,-5.083171 z" />
-            <circle style="fill:#000000;fill-opacity:1;stroke-width:0.275448;stroke-opacity:0.7" id="path5830"
-               cx="47.625004" cy="47.625" r="0.13229167" />
-         </g>
-         <g id="layer4" style="display:inline">
-            <g id="g50164">
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:6.61458px;line-height:1.05;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="57.559181" y="47.472862" id="HourText">
-                  <tspan id="tspan9997" style="font-size:6.61458px;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="57.559181" y="47.472862">HH:MM</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:ultra-condensed;font-size:5.02708px;line-height:1.05;font-family:'Fira Sans Compressed';-inkscape-font-specification:'Fira Sans Compressed, Ultra-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0"
-                  x="58.158062" y="51.388721" id="DateText">
-                  <tspan
-                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5.02708px;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed, Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="58.158062" y="51.388721" id="tspan35162">30/Dec/2021</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.70417px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="-47.621223" y="83.50956" id="AMPM" transform="rotate(-90)">
-                  <tspan id="tspan37740"
-                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.70417px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="-47.621223" y="83.50956">AM</tspan>
-               </text>
-            </g>
-            <g id="g105941">
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:9.26042px;line-height:1.25;font-family:sans-serif;fill:#17b2ff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="12.320308" y="47.084785" id="WeatherIcon">
-                  <tspan id="tspan58718" style="font-size:9.26042px;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="12.320308" y="47.084785">IC</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:7.9375px;line-height:1.25;font-family:sans-serif;fill:#17b2ff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="21.617544" y="46.901531" id="Temp">
-                  <tspan id="tspan61574" style="font-size:7.9375px;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="21.617544" y="46.901531">100</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:4.7625px;line-height:1.25;font-family:sans-serif;mix-blend-mode:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="12.961741" y="51.32917" id="CityName">
-                  <tspan id="tspan87896" style="font-size:4.7625px;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="12.961741" y="51.32917">CityName</tspan>
-               </text>
-            </g>
-            <g id="g1558">
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:5.29168px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
-                  x="64.900444" y="76.403297" id="text101424">
-                  <tspan id="tspan101422"
-                     style="font-size:5.29168px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264584"
-                     x="64.900444" y="76.403297">Heart</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:3.96875px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="65.010582" y="81.68248" id="HRCounter">
-                  <tspan id="tspan121237"
-                     style="font-size:3.96875px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="65.010582" y="81.68248">100</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:5.29167px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="31.97286" y="76.403435" id="text98502">
-                  <tspan id="tspan98500"
-                     style="font-size:5.29167px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="31.97286" y="76.403435">Steps</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:3.96875px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="31.931843" y="80.909569" id="StepCounter">
-                  <tspan id="tspan142600"
-                     style="font-size:3.96875px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="31.931843" y="80.909569">100000</tspan>
-               </text>
-            </g>
-            <g id="g2128">
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:5.29168px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
-                  x="66.900444" y="19.802275" id="text160892">
-                  <tspan id="tspan160890"
-                     style="font-size:5.29168px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264584"
-                     x="66.900444" y="19.802275">Watch</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:3.96875px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="67.010582" y="25.081457" id="WBat" width="100%">
-                  <tspan id="tspan160894"
-                     style="font-size:3.96875px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="67.010582" y="25.081457">100%</tspan>
-               </text>
-            </g>
-            <g id="g2145">
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:5.29167px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="31.97286" y="19.802412" id="text160902">
-                  <tspan id="tspan160900"
-                     style="font-size:5.29167px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="31.97286" y="19.802412">Phone</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:3.96875px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="31.931843" y="24.308546" id="PBat">
-                  <tspan id="tspan160904"
-                     style="font-size:3.96875px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="31.931843" y="24.308546">100%</tspan>
-               </text>
-            </g>
-            <g id="g198381">
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="48.116699" y="58.645042" id="EventSummary">
-                  <tspan id="tspan177103"
-                     style="font-size:3.175px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="48.116699" y="58.645042">Really Long Event Summary about going somewhere</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="48.077938" y="61.820042" id="EventPlace">
-                  <tspan id="tspan188777"
-                     style="font-size:3.175px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="48.077938" y="61.820042">Really Long Location Name, CityName, PR</tspan>
-               </text>
-               <text xml:space="preserve"
-                  style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-                  x="48.218243" y="64.995041" id="EventTime">
-                  <tspan id="tspan194493"
-                     style="font-size:3.175px;text-align:center;text-anchor:middle;fill:#17b2ff;fill-opacity:1;stroke-width:0.264583"
-                     x="48.218243" y="64.995041">ST:AR am - EN:Tim pm</tspan>
-               </text>
-            </g>
-         </g>
-      </svg>
-   </div>
-   <script src="js/app.js"></script>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="Black Bold Watch Face for Tizen"/>
+    <title>Black Bold</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body> <img class="bg" src="image/bg.svg"/>
+    <hr class="middle"/>
+    <div class="center"></div>
+    <div class="FixedCenter" id="SecondPointer"><img class="SecondPointer" src="image/ScHand.svg"/></div>
+    <div class="FixedCenter" id="MinutePointer"><img class="MinutePointer" src="image/MnHand.svg"/></div>
+    <div class="FixedCenter" id="HourPointer"><img class="HourPointer" src="image/HrHand.svg"/></div>
+    <div class="HourText"> </div>
+    <div class="DateText"></div>
+    <script src="js/app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1.5875mm"
+   height="26.458334mm"
+   viewBox="0 0 1.5875 26.458334"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <g
+       id="g88"
+       transform="translate(-46.82957,-22.17473)">
+      <path
+         id="HourPointer"
+         style="display:inline;fill:#808080;fill-opacity:1;stroke-width:0.203122;stroke-opacity:0.7"
+         d="m 47.623321,22.17473 c 0.374178,0 0.793749,4.607596 0.793749,5.083171 v 20.516725 c 0,0.475574 -0.354011,0.858438 -0.793749,0.858438 -0.43974,0 -0.793751,-0.382864 -0.793751,-0.858438 V 27.257901 c 0,-0.475575 0.419571,-5.083171 0.793751,-5.083171 z" />
+    </g>
+  </g>
+</svg>

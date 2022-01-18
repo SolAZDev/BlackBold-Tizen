@@ -5,54 +5,61 @@ html, body {
     overflow: hidden;
     background-color: black;
 }
-
-#container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.middle{
+    width: 100vw;
+    height: 1px;
+    background-color: blue;
+    position: fixed;
+    bottom: 50vh;
+    top: 50vh;
+    margin-top: -.5px;
+}
+.center{
+    width: 1px;
+    height: 100vh;
+    border: 0 0 0 1px solid blue;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    margin-left: -1px;
+}
+.bg {
+    width: 100vw;
+    height: 100vh;
 }
 
-#background {
-    width: 100%;
-    height: 100%;
-    background-image: url("../image/watch_bg.png");
+.FixedCenter{
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    bottom: 50vh;
+    transform-origin: center bottom;
+    transition: all .1s linear;
 }
-
-#components-main {
+.TimeHand{
+    width: 1.66vw
+}
+.HourPointer {
+    width: 1.66vw;
+    height: 33vh;
+    margin-left: -.83vw;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    bottom: -8.5%
 }
-
-#hand-main-hour {
+.MinutePointer {
+    width: 1.11vw;
+    height: 25vh;
+    margin-left: -.555vw;
+    /* margin-bottom: -8.25vw; */
     position: absolute;
-    left: 172.5px;
-    top: 0px;
-    width: 15px;
-    height: 360px;
-    background-image: url("../image/watch_hand_hour.png");
-    background-position: center top;
-    background-size: contain;
+    bottom: -2.5%
+
 }
-
-#hand-main-minute {
+.SecondPointer {
+    width: 1vw;
+    height: 29vh;
+    margin-left: -.5vw;
     position: absolute;
-    left: 172px;
-    top: 0px;
-    width: 16px;
-    height: 360px;
-    background-image: url("../image/watch_hand_minute.png");
-    background-position: center top;
-    background-size: contain;
-}
+    bottom: -1.5vh
 
-#hand-main-second {
-    position: absolute;
-    left: 172Px;
-    top: 0px;
-    width: 16px;
-    height: 360px;
-    background-image: url("../image/watch_hand_second.png");
-    background-position: center top;
-    background-size: contain;
 }

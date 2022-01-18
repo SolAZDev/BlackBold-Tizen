@@ -12,8 +12,6 @@ var svgIDs = {
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 function GetAllIDs() {
-    const main = document.getElementById("main").contentDocument;
-    console.log(main);
     svgIDs.hrHand = document.getElementById('HourPointer');
     svgIDs.mnHand = document.getElementById('MinutePointer');
     svgIDs.scHand = document.getElementById('SecondPointer');
@@ -23,7 +21,12 @@ function GetAllIDs() {
     idsLoaded = true;
 }
 
-function rotateElement(elementID, angle) {
+function rotateElement(element, angle) {
+    //    var element = document.querySelector("#" + elementID);
+    element.style.transform = "rotate(" + angle + "deg)";
+}
+
+function og_rotateElement(elementID, angle) {
     //    var element = document.querySelector("#" + elementID);
     (document.getElementById(elementID)).style.transform = "rotate(" + angle + "deg)";
 }
@@ -42,15 +45,19 @@ function updateTime(firstTime = false) {
         return;
     }
     // Rotate the hour/minute/second hands
-    rotateElement("HourPointer", (hour + (minute / 60) + (second / 3600)) * 30);
-    rotateElement("MinutePointer", (minute + second / 60) * 6);
-    rotateElement("SecondPointer", second * 6);
-    if (minute == 0 || firstTime) {
-        (svgIDs.timeText).innerHTML = addZero(hour) + ":" + addZero(minute);
-    }
-    if (hour == 0 || firstTime) {
-        (svgIDs.dateText).children[0].innerHTML = addZero(datetime.getDate()) + "/" + months[datetime.getMonth()] + "/" + datetime.getFullYear().toString().slice(-2);
-    }
+    // rotateElement("HourPointer", (hour + (minute / 60) + (second / 3600)) * 30);
+    // rotateElement("MinutePointer", (minute + second / 60) * 6);
+    // rotateElement("SecondPointer", second * 6);
+    rotateElement(svgIDs.hrHand, (hour + (minute / 60) + (second / 3600)) * 30);
+    rotateElement(svgIDs.mnHand, (minute + second / 60) * 6);
+    rotateElement(svgIDs.scHand, second * 6);
+    console.log(datetime);
+    // if (minute == 0 || firstTime) {
+    //     (svgIDs.timeText).innerHTML = addZero(hour) + ":" + addZero(minute);
+    // }
+    // if (hour == 0 || firstTime) {
+    //     (svgIDs.dateText).children[0].innerHTML = addZero(datetime.getDate()) + "/" + months[datetime.getMonth()] + "/" + datetime.getFullYear().toString().slice(-2);
+    // }
 }
 
 function bindEvents() {
@@ -69,7 +76,7 @@ function bindEvents() {
 
 
 function init() {
-    // GetAllIDs();
+    GetAllIDs();
     bindEvents();
     updateTime(true);
 
@@ -80,3 +87,5 @@ function init() {
 }
 
 window.onload = init();
+console.log("Initialized!")
+init();
